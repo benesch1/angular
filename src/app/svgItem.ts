@@ -1,11 +1,11 @@
-export interface Product {
+export interface SVGItem {
   id: number;
   name: string;
   price: number;
   description: string;
 }
 
-export const products = [
+export const svgItems = [
   {
     id: 1,
     name: 'Phone XL',

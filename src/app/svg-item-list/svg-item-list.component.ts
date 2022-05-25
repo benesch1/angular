@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
-import { products } from '../products';
+import { svgItems } from '../svgItem';
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  selector: 'app-svg-item-list',
+  templateUrl: './svg-item-list.component.html',
+  styleUrls: ['./svg-item-list.component.css']
 })
-export class ProductListComponent {
-  products = products;
+export class SVGItemListComponent {
+  products = svgItems;
 
   share() {
     console.log('The product has been shared!');
