@@ -13,6 +13,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
 import { SvgItemService } from './services/svg-item.service';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
+import { ItemTreeComponent } from './item-tree/item-tree.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
     TopBarComponent,
     SvgLoaderComponent,
     SVGItemListComponent,
-    FooterBarComponent
+    FooterBarComponent,
+    ItemTreeComponent
   ],
   bootstrap: [
     AppComponent
