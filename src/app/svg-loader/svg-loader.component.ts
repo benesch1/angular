@@ -79,10 +79,10 @@ export class SvgLoaderComponent {
           if (test instanceof SVGElement) {
             var panZoomTiger = svgPanZoom(test)
             // panZoomTiger.zoomBy(100);
-            test.setAttribute('height', '400px');
-            test.setAttribute('width', '400px');
-            panZoomTiger.resize(); // update SVG cached size and controls positions
-            panZoomTiger.fit();
+            test.setAttribute('height', '550px');
+            test.setAttribute('width', '900px');
+            // panZoomTiger.resize(); // update SVG cached size and controls positions
+            // panZoomTiger.fit();
             panZoomTiger.center();
           }
 
