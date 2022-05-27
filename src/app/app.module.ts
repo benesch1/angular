@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatTreeModule} from '@angular/material/tree';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -24,6 +25,7 @@ import { ItemTreeComponent } from './item-tree/item-tree.component';
     HttpClientModule,
     MatGridListModule,
     MatCheckboxModule,
+    MatTreeModule,
     RouterModule.forRoot([
       { 
         path: '', component: SVGItemListComponent 
@@ -36,7 +38,7 @@ import { ItemTreeComponent } from './item-tree/item-tree.component';
     SvgLoaderComponent,
     SVGItemListComponent,
     FooterBarComponent,
-    ItemTreeComponent
+    ItemTreeComponent,
   ],
   bootstrap: [
     AppComponent

@@ -25,6 +25,7 @@
     "@types/d3": "^7.4.0",
     "@types/svg-pan-zoom": "^3.4.0",
     "angular-in-memory-web-api": "~0.11.0",
+    "angular-material-tree": "^0.2.1",
     "d3": "^7.4.4",
     "rxjs": "~7.4.0",
     "svg-pan-zoom": "^3.6.1",
