@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SvgItemService } from '../services/svg-item.service';
 
 @Component({
   selector: 'app-item-tree',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-tree.component.css']
 })
 export class ItemTreeComponent implements OnInit {
+  svgItems = this.svgItemService.getItems();
 
-  constructor() { }
+  constructor(
+    private svgItemService: SvgItemService
+  ) {}
 
   ngOnInit(): void {
   }
