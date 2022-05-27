@@ -1,8 +1,30 @@
 <app-top-bar></app-top-bar>
 
-<div class="container">
+
+
+
+<mat-grid-list cols="2" rowHeight="7:1">
+  <mat-grid-tile>
+    <app-svg-loader></app-svg-loader>
+  </mat-grid-tile>
+  <mat-grid-tile>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list id="grid2" cols="2">
+  <mat-grid-tile>
+    <div id="testinger" >
+
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-svg-item-list></app-svg-item-list>
+  </mat-grid-tile>
+
+</mat-grid-list>
+<!-- <div class="container">
   <router-outlet></router-outlet>
-</div>
+</div> -->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

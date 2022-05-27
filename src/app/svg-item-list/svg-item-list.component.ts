@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { SvgItemService } from '../services/svg-item.service';
 import { svgItems } from '../svgItem';
 
 @Component({
@@ -8,10 +8,14 @@ import { svgItems } from '../svgItem';
   styleUrls: ['./svg-item-list.component.css']
 })
 export class SVGItemListComponent {
-  products = svgItems;
+  svgItems = this.svgItemService.getItems();
 
-  share() {
-    console.log('The product has been shared!');
+  constructor(
+    private svgItemService: SvgItemService
+  ) {}
+
+  showSVGElement(event:any) {
+    console.log(event.source.id,  'has changed!');
   }
 }
 

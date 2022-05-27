@@ -6,18 +6,32 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SVGItemListComponent } from './svg-item-list/svg-item-list.component';
+import { SvgLoaderComponent } from './svg-loader/svg-loader.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from "@angular/material/icon";
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
+import { SvgItemService } from './services/svg-item.service';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    MatIconModule,
+    HttpClientModule,
+    MatGridListModule,
+    MatCheckboxModule,
     RouterModule.forRoot([
-      { path: '', component: SVGItemListComponent },
+      { 
+        path: '', component: SVGItemListComponent 
+      },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
+    SvgLoaderComponent,
     SVGItemListComponent
   ],
   bootstrap: [

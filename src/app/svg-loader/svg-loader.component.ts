@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { svgItems } from '../svgItems';
+import { svgItems } from '../svgItem';
 import { Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import * as d3 from 'd3';
 import { SvgItemService } from '../services/svg-item.service';
+import * as svgPanZoom from 'svg-pan-zoom';
 
 @Component({
   selector: 'app-svg-loader',
@@ -21,7 +22,7 @@ export class SvgLoaderComponent {
     private svgItemService: SvgItemService
     ) {}
 
-  addToItemList(element) {
+  addToItemList(element : any) {
     this.svgItemService.addToItemList(element);
   }
 
@@ -67,11 +68,22 @@ export class SvgLoaderComponent {
       ///console.log(fileReader.result);
       //this.test = fileReader.result;
         //console.log('testinger exists')
-        const testinger = document.getElementById('testinger');
+        let testinger = document.getElementById('testinger');
         if (testinger != null) {
           console.log(typeof fileReader.result)
           if (typeof fileReader.result == 'string') {
             testinger.innerHTML = fileReader.result;
+          }
+
+          const test = testinger.children.item(0);
+          if (test instanceof SVGElement) {
+            var panZoomTiger = svgPanZoom(test)
+            // panZoomTiger.zoomBy(100);
+            test.setAttribute('height', '500px');
+            test.setAttribute('width', '500px');
+            panZoomTiger.resize(); // update SVG cached size and controls positions
+            panZoomTiger.fit();
+            panZoomTiger.center();
           }
 
         }
