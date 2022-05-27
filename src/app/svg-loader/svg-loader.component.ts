@@ -75,14 +75,14 @@ export class SvgLoaderComponent {
             testinger.innerHTML = fileReader.result;
           }
 
-          const test = testinger.children.item(0);
+          const test = testinger //.children.item(0);
           if (test instanceof SVGElement) {
             var panZoomTiger = svgPanZoom(test)
             // panZoomTiger.zoomBy(100);
-            test.setAttribute('height', '500px');
-            test.setAttribute('width', '500px');
-            panZoomTiger.resize(); // update SVG cached size and controls positions
-            panZoomTiger.fit();
+            test.setAttribute('height', '550px');
+            test.setAttribute('width', '900px');
+            // panZoomTiger.resize(); // update SVG cached size and controls positions
+            // panZoomTiger.fit();
             panZoomTiger.center();
           }
 
