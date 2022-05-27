@@ -12,6 +12,7 @@ import { MatIconModule } from "@angular/material/icon";
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
 import { SvgItemService } from './services/svg-item.service';
+import { FooterBarComponent } from './footer-bar/footer-bar.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { SvgItemService } from './services/svg-item.service';
     AppComponent,
     TopBarComponent,
     SvgLoaderComponent,
-    SVGItemListComponent
+    SVGItemListComponent,
+    FooterBarComponent
   ],
   bootstrap: [
     AppComponent
