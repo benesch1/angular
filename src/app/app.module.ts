@@ -14,6 +14,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SvgItemService } from './services/svg-item.service';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { CustomButtonComponent } from './components/custom-button/custom-button.component';
+import { CustomTabComponent } from './components/custom-tab/custom-tab.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CustomButtonComponent } from './components/custom-button/custom-button.
     SvgLoaderComponent,
     SVGItemListComponent,
     FooterBarComponent,
-    CustomButtonComponent
+    CustomButtonComponent,
+    CustomTabComponent
   ],
   bootstrap: [
     AppComponent
