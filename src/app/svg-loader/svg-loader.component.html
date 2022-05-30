@@ -15,14 +15,25 @@
         mat-mini-fab
         color="primary"
         class="upload-btn"
-        (click)="fileUpload.click()"
-      >
+        (click)="fileUpload.click()">
         <mat-icon>attach_file</mat-icon>
       </button>
+      <app-custom-button 
+        mat-mini-fab
+        text="Load File"
+        color="primary"
+        class="upload-btn"
+        (btnClick)="fileUpload.click()">
+        icon = <mat-icon>attach_file</mat-icon>
+      </app-custom-button>
     </div>
   </mat-grid-tile>
   <mat-grid-tile>      
-    <button type="button" (click)="scanSVG()">Scan SVG</button>
+    <!-- <button type="button" (click)="scanSVG()">Scan SVG</button> -->
+    <app-custom-button 
+      text="Scan SVG" 
+      (btnClick)="scanSVG()">
+    </app-custom-button>
   </mat-grid-tile>
 </mat-grid-list>
 <!-- <div *ngIf="fileName">
