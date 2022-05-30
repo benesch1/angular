@@ -26,6 +26,7 @@
     "@types/svg-pan-zoom": "^3.4.0",
     "angular-in-memory-web-api": "~0.11.0",
     "d3": "^7.4.4",
+    "json-server": "^0.17.0",
     "rxjs": "~7.4.0",
     "svg-pan-zoom": "^3.6.1",
     "tslib": "^2.3.0",
