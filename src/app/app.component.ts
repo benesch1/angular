@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import * as svgPanZoom from 'svg-pan-zoom';
-import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 @Component({

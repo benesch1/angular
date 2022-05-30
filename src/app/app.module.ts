@@ -3,14 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
+import { MatIconModule } from "@angular/material/icon";
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
+import {MatTabsModule} from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SVGItemListComponent } from './svg-item-list/svg-item-list.component';
 import { SvgLoaderComponent } from './svg-loader/svg-loader.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MatIconModule } from "@angular/material/icon";
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCheckboxModule} from '@angular/material/checkbox'; 
+
 import { SvgItemService } from './services/svg-item.service';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { CustomButtonComponent } from './components/custom-button/custom-button.component';
@@ -25,6 +30,8 @@ import { CustomTabComponent } from './components/custom-tab/custom-tab.component
     HttpClientModule,
     MatGridListModule,
     MatCheckboxModule,
+    MatTabsModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
       { 
         path: '', component: SVGItemListComponent 
