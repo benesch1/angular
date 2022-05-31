@@ -1,31 +1,28 @@
-<app-top-bar></app-top-bar>
-
-<mat-grid-list cols="2" rowHeight="7:1">
-  <mat-grid-tile>
-    <div class="test-again">
-      <app-svg-loader ></app-svg-loader>
+<!-- <app-top-bar></app-top-bar> -->
+<div class="parent-container">
+  <div class="test-container">
+    <div class="col-test-item">
+      <app-svg-loader></app-svg-loader>
     </div>
-  </mat-grid-tile>
-  <mat-grid-tile>
-  </mat-grid-tile>
-</mat-grid-list>
+    <div class="col-test-item">
+      <app-svg-loader></app-svg-loader>
+    </div>
+  </div>
 
-<mat-grid-list id="test-grid" cols="2" rowHeight="1.37:1">
-  <mat-grid-tile>
-    <svg id="testinger" >
+  <div class="test-container">
+    <div class="test-item">
+      <div class="extra-margin">
+        <svg id="testinger" ></svg>
+      </div>
+    </div>
+    <div class="test-item">
+      <app-svg-item-list></app-svg-item-list>
+    </div>
+  </div>
+</div>
 
-    </svg>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-svg-item-list></app-svg-item-list>
-  </mat-grid-tile>
 
-</mat-grid-list>
-
-<app-footer-bar></app-footer-bar>
-<!-- <div class="container">
-  <router-outlet></router-outlet>
-</div> -->
+<!-- <app-footer-bar></app-footer-bar> -->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

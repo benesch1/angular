@@ -1,12 +1,11 @@
 #ScrollViewWrapper {
     /* padding-top: 300; */
+    height: 300px;
+    width: 300px;
     overflow-y: scroll;
-    position: absolute;
-    right: 0;
-    left:0;
-    top: 0;
-    bottom: 0;
-
+    background-color: rgb(230, 189, 79);
+    border:1px solid black;
+    margin: 20px;
     /* display: none; */
 }
 

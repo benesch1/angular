@@ -18,13 +18,13 @@ export class SvgLoaderComponent {
   test:any;
 
   constructor(
-    @Inject(DOCUMENT) private document: Document,
     private svgItemService: SvgItemService
     ) {}
 
   addToItemList(element : any) {
     this.svgItemService.addToItemList(element);
   }
+
 
   scanSVG() {
     //const d3test = d3.selectAll(".node")._groups[0];

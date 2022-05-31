@@ -2,19 +2,7 @@
 
 body {
   margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.mat-grid-tile-content {
-  flex-direction: column !important;
-  align-items: stretch !important;
-}
-
-.test-css {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: blue;
+  height: 100hv;
 }
 
 header {
@@ -34,12 +22,8 @@ footer a {
     margin: 0;
 }
 
-.mat-grid-tile{
-  border:1px solid black;
-}
 
-
-/* router-outlet + *  {
+router-outlet + *  {
   padding: 0 16px;
 } */
 
@@ -61,76 +45,58 @@ p {
   font-size: 14px;
 }
 
-/* Hyperlink */
 
-a {
-  cursor: pointer;
-  color: #1976d2;
-  text-decoration: none;
+.parent-container {
+  /* display: flex; */
+  height: 100hv;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(327, 61%, 35%);
+  /* justify-content: space-around;
+  align-items: center;
+  border:1px solid black;
+  flex-wrap: wrap; */
+
 }
 
-a:hover {
-  opacity: 0.8;
+.test-container {
+  display: flex;
+  background-color: aqua;
+  justify-content: space-around;
+  align-items: center;
+  border:1px solid black;
+  flex-wrap: wrap;
+  margin: 10px;
 }
-
-.node:hover {
-  opacity: 0.5;
-}
-
-
 
 /* Input */
 
-/* input {
-  font-size: 14px;
-  border-radius: 2px;
-  padding: 8px;
-  margin-bottom: 16px;
-  border: 1px solid #BDBDBD;
-}
-
-label {
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 4px;
-  display: block;
-  text-transform: uppercase;
-} */
-
-/* Button */
-/* .button, button {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 16px;
-  border-radius: 2px;
-  font-size: 14px;
-  cursor: pointer;
+.col-test-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 600px;
   background-color: #1976d2;
-  color: white;
-  border: none;
-} */
-
-.button:hover, button:hover {
-  opacity: 0.8;
-  font-weight: normal;
+  justify-content: center;
+  border:1px solid black;
+  margin: 10px;
 }
 
-.button:disabled, button:disabled {
-  opacity: 0.5;
-  cursor: auto;
+.test-item {
+  display: flex;
+  flex-basis: 300px;
+  background-color: rgb(26, 151, 124);
+  justify-content: center;
+  border:1px solid black;
+  margin: 10px;
 }
 
-/* Fancy Button */
-
-.fancy-button {
-  background-color: white;
-  color: #1976d2;
+.test-item:nth-of-type(1) {
+  flex-grow: 4;
 }
 
-/* .fancy-button i.material-icons {
-  color: #1976d2;
-  padding-right: 4px;
-} */
+.test-item:nth-of-type(2) {
+  flex-grow: 1;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

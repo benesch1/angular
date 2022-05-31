@@ -1,12 +1,17 @@
-<div class="test-css">
-  <input
-  type="file"
-  class="file-input"
-  (change)="onFileSelected($event)"
-  #fileUpload/>
-
-  <app-custom-button 
+<div class="col-flex-box">
+  <div class="col-flex-item">
+    <input
+    type="file"
+    class="file-input"
+    (change)="onFileSelected($event)"
+    #fileUpload/>
+  </div>
+  <div  class="col-flex-item">
+    <app-custom-button 
     text="Scan SVG" 
     (btnClick)="scanSVG()">
-  </app-custom-button>
+    </app-custom-button>
+  </div>
 </div>
+
+
