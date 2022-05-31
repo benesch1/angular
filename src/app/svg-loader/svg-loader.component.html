@@ -1,42 +1,12 @@
-
-<input
+<div class="test-css">
+  <input
   type="file"
   class="file-input"
   (change)="onFileSelected($event)"
-  #fileUpload
-/>
+  #fileUpload/>
 
-<mat-grid-list id="svgLoaderGrid" cols="2">
-  <mat-grid-tile >
-    <div class="file-upload">
-      {{ fileName || 'No file uploaded yet.' }}
-    
-      <button
-        mat-mini-fab
-        color="primary"
-        class="upload-btn"
-        (click)="fileUpload.click()">
-        <mat-icon>attach_file</mat-icon>
-      </button>
-      <app-custom-button 
-        mat-mini-fab
-        text="Load File"
-        color="primary"
-        class="upload-btn"
-        (btnClick)="fileUpload.click()">
-        icon = <mat-icon>attach_file</mat-icon>
-      </app-custom-button>
-    </div>
-  </mat-grid-tile>
-  <mat-grid-tile>      
-    <!-- <button type="button" (click)="scanSVG()">Scan SVG</button> -->
-    <app-custom-button 
-      text="Scan SVG" 
-      (btnClick)="scanSVG()">
-    </app-custom-button>
-  </mat-grid-tile>
-</mat-grid-list>
-<!-- <div *ngIf="fileName">
-  <div class="svg" [innerHTML]="test"></div>
-</div> -->
-<!-- <div id="testinger" ></div> -->
+  <app-custom-button 
+    text="Scan SVG" 
+    (btnClick)="scanSVG()">
+  </app-custom-button>
+</div>
