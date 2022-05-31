@@ -15,23 +15,23 @@ export class SVGItemListComponent {
 
   constructor(
     private svgItemService: SvgItemService
-  ) {}
+  ) {
+    this.onUpdateValues = this.onUpdateValues.bind(this);
+  }
 
   showSVGElement(event:any) {
     console.log(event.source.id,  'has changed!');
   }
 
-  onClick() {
-    // console.log(this.svgItems.length)
+  onUpdateValues() {
     try {
       const hostinger = window.host;
       console.log(hostinger)
+
       const test = hostinger.dataValues
       hostinger.dataKeys = [1,this.svgItems.length]
       let d3test = d3.selectAll(".node");
       d3test.style("fill",function(d, i){
-        // var timeStep = d3.select("#timeStepSlider").attr("value")
-        //temperature = d[timeStep]
         const temperature = test[0][i]
         const red = Math.round(temperature * 255)
         return "rgb(" + red + ",0,100)"
@@ -40,9 +40,13 @@ export class SVGItemListComponent {
     catch(e:any) {
       console.log(e.Message)
     }
-
   }
 
+
+  onClick() {
+    const hostinger = window.host;
+    hostinger.valuesUpdated.connect(this.onUpdateValues)
+  }
 }
 
 
