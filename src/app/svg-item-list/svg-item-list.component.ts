@@ -3,6 +3,8 @@ import { SvgItemService } from '../services/svg-item.service';
 import { svgItems } from '../svgItem';
 import * as d3 from 'd3';
 
+
+
 declare const window: any;
 
 @Component({
